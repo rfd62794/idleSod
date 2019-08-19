@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<link rel="stylesheet" type="text/css" href="interface.css" />
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<p>Sod: <span id="sodDisplay"></span>
+<br>
+Shovels: <span id="shovelDisplay"></span></p>
+
+<p><button onclick="gatherSod(clickSod)"><span id="clickSodDisplay"></span></button></p>
+
+<p><button id="buyShovelButton" hidden="" onclick="buyShovelClick()">
+Buy Shovel ( <span id="shovelCostDisplay"></span> Sod)
+</button></p>
+
+
+<p><button id="buildMoundButton" hidden="" onclick="buildMoundClick()">
+Build Mound ( <span id="moundCostDisplay"></span> Shovels)
+</button></p>
+
+</body>
+</html>
