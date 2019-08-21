@@ -37,7 +37,14 @@ var updateDisplay =
     },
     updateMoundCostDisplay : function()
     {
-        document.getElementById("moundCostDisplay").innerHTML = moundCost;
+        if(hasMound == false)
+        {
+		        document.getElementById("buildMoundButton").textContent = ("Build Mound (" + moundCost + " Shovels)");
+	      }
+	      else
+	      {
+		        document.getElementById("buildMoundButton").textContent = ("Upgrade Mound (" + moundCost + " Shovels)");
+	      }	
     }
 };
 
@@ -120,12 +127,5 @@ function()
     checkAffordShovel();
     checkAffordMound();
     updateDisplay.updateAllDisplay();
-    if(hasMound == false)
-    {
-		    document.getElementById("buildMoundButton").textContent = ("Build Mound (" + moundCost + " Shovels)");
-	  }
-	  else
-	  {
-		  document.getElementById("buildMoundButton").textContent = ("Upgrade Mound (" + moundCost + " Shovels)");
-	  }	
+    
 }, 100);
