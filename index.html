@@ -2,25 +2,42 @@
 <html lang="en">
 <head>
   
-<link rel="stylesheet" type="text/css" href="interface.css" />
-<script type="text/javascript" src="script.js"></script>
+<!-- link rel="stylesheet" type="text/css" href="interface.css" -->
+<script type="text/javascript" src="resourceGenerator.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-<p>Sod: <span id="sodDisplay"></span>
+<p>
+Sod: <span id="sodDisplay"></span>
 <br>
-Shovels: <span id="shovelDisplay"></span></p>
+<span id="shovelDisplay"></span>
+<br>
+<span id = "moundLevelDisplay"></span>
+<br>
+<span id = "critterDisplay"></span>
+</p>
 
-<p><button onclick="gatherSod(clickSod)"><span id="clickSodDisplay"></span></button></p>
-
-<p><button id="buyShovelButton" hidden="" onclick="buyShovelClick()">
+<p>
+<button onclick="gatherSod(clickSod)"><span id="clickSodDisplay"></span></button>
+  
+<button id="buyShovelButton" hidden="" onclick="buyShovelClick()">
 Buy Shovel ( <span id="shovelCostDisplay"></span> Sod)
-</button></p>
+</button>
 
-
-<p><button id="buildMoundButton" hidden="" onclick="buildMoundClick()">
-Build Mound 5 Shovels)
-</button></p>
+<button 
+  id="buildMoundButton"
+  onclick="buildMoundClick()"
+  textcontent="Build Mound">
+</button>
+  
+<button 
+  id="buyCritterButton"
+  onclick="buyCritterClick()"
+  textcontent="Buy Critter">
+</button>  
+  
+</p>
 
 </body>
 </html>

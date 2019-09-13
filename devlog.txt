@@ -1,0 +1,252 @@
+9/10/19
+
+2:30PM
+ - The Dev Log is up-to-date (mostly) with my personal
+   notes.
+
+10:30AM
+ - I've put a fair amount of time into coding,
+   and only a little bit towards the theoretical
+   Game Design, or a Game Design Document.
+
+ - I also need to go back and digitally transcribe
+   the Dev Log, and Update Log. (DONE)
+
+9/6/19 
+
+12PM
+ - The current build is stable. I'm just feeling
+   demotivated towards further progress.
+
+11AM
+ - FIXED: Fixed yet another display bug.
+          It seems stable for now.
+
+
+8/28/19 
+
+1:20PM
+ - FIXED: Apparently the Critter Sod measurement 
+          wasn't implemented correctly,
+          so I'm fixing that and updating
+          the Sod Per Sec Display to account for
+          
+          The Unemployed Critters.
+
+
+8/23/19 
+
+3:15PM
+ - Laid basework for Farmers, Miners, and Harvesters.
+
+2:30PM
+ - IDEA: Look at Critter Mound For Dirt & 
+   Sod Conversion to Food.
+ - IDEA: Farmer(Sod) / Miner(Dirt) / Harvester(Food)?
+ - IDEA: Mound Upgrade @ 5 Critters. Unlock Farming.
+   2 Farmers / 1 Harvester / 2 Miners
+
+
+8/21/19 
+
+4:15PM
+ - Updated Display and Introduced basework for Critters.
+
+12:55PM
+ - Laid basework for Buy Critter Button.
+
+12:45PM
+ - Updated/Improved Displays.
+
+12:30PM
+ - Updated GitHub Repositories.
+ - Also updated Shovel Display to display 
+   Next Shovel Cost.
+
+
+8/20/19 
+
+2PM
+
+IDEA: Another Idea I had was to add a button/mode for
+Auto-Progress, that way I can turn it on, 
+let it run in the background,
+and reach late-game quickly to test.
+
+
+8/18/19
+
+NOTE: If I use Sod as the Base Resource, I know I can
+use Shovels for Automation.
+
+Then Critters convert Sod to Food, OR produce more Sod.
+
+Now, where do I expand? What about Soldiers/Military?
+
+More Soldiers produce more Willpower. 
+
+Then Will Power can be used to run Militia Campaign,
+perhaps similar to Trimps/Critter Mound.
+
+Or maybe Risk/Dice-Based?
+
+
+8/17/19
+
+IDEA: Tier 1 - Sod & Shovel Production
+      Tier 2 - Mound & Critter Production
+      Tier 3 - Food & Military Production
+      Tier 4 - ???
+
+
+8/16/19 
+
+10:30AM
+- NOTE: I read somewhere that most Idle Games follow
+        a certain theme.
+        Food, Wood, & Ore are typically 
+        the base resources.
+        
+        My idea is to do Food/Sod/Ore, and Sod be the
+        Critter Construction Material.
+  
+        This way, Critters have a purpose.
+        Converts 2 Sod to 1 Food every second.
+  
+- NOTE: Alternatively, Sod could be the base material,
+        and other materials draw from sod, 
+        requiring balance, and maintaining 
+        Improved Sod Production.
+
+
+8/14/19
+
+3:45PM
+ - TODO: Looking into Porting Button Creation to 
+   JavaScript-side.
+
+3:30PM
+ - Still no sense of direction atm. 
+
+2:30PM
+ - Reverting again.
+   W3 Schools has a good guide.
+
+
+8/13/19 
+
+11:30AM
+ - Making Display Update Functions & 
+   Moving Them to the top of Main Function.
+
+
+8/9/19 
+
+3:40PM
+ - Update Sod moved successfully.
+
+3:30PM
+ - NOTE: var updateDisplay 
+(Not sure what this means. 
+Retroactively making digital record.)
+
+11:30AM
+ - I thik I briefly had it working,
+   but it's broken again.
+   
+   Reverting back a version.
+
+10AM
+ - I've finally got Shovel Cost incrementing at a
+   preferable rate.
+
+- I'm going to attemt to make a display control object.
+  AGAIN.
+
+
+8/8/19
+
+5:45PM
+ - Cleaned up some Display Code. It still seems stable.
+ 
+ - TODO: One thing I need to consider is a 
+   static version display in the upper-right corner.
+   This way I can leave different version idling,
+   and get a better picture of the late-game.
+
+4:50PM
+ - NOTE: Still refining Incremental Rates for Upgraded 
+   Mound.
+
+
+4:30PM
+ - FIXED: Fixed a display bug with the 
+   Shoveled Sod Per Sec.
+
+4pm
+ - FIXED: Fixd a bug that I didn't realize existed.
+   Involved Mounds not deducting the correct amount
+   of Shovels.
+
+3PM
+ - Confirmed Fixed. I went back to the tutorial I based
+   it on to correct the issue.
+
+1:30PM
+ - FIXED: I believe the previous issue is mostly fixed.
+
+11:20AM
+ - NOTE: Changed Sod ID in HTML to sodDisplay to avoid 
+   future confustion.
+
+11:30AM
+ - BUG: Found a bug where Shovel Cost will decrease if 
+   youbuy Mound, and then jump exponentially.
+
+10AM
+ - It appears that the best option is to go back to 
+   the Stable Build.
+
+
+8/7/19
+
+5:45pm
+ - Broke something while fixing/cleaning/moving the 
+   display.
+   Might have to go back a build, but hoping not.
+   
+5:20pm
+ - NOTE: First Critter costs 50 Sod.
+ 
+4:50pm
+ - After some more thought on it, there's no real NEED to 
+   condense code yet.
+   
+ - TODO: However. converting the button code over to the 
+   JavaScript-side might be worth considering soon.
+
+ - GOAL: For the time being, the next goal is to 
+   implement Critters, via Building The Mound.
+
+ - NOTE: Critters auto-gather 3 Sod Per Sec, 
+   while devoted Farmers gather 5 Sod Per Sec.
+
+2:30pm
+ - The only sensible way that I can picture doing the 
+   Sod Production is as an object centered by the 
+   Critter Mound as the main Object.
+
+1:50pm
+ - I'm going to work on cleaning the code before adding 
+   more functionality.
+
+1:30pm
+ - I've got a stable build with decent display functionality.
+ - Very messy, but remains mostly functional with minor
+   tweaks as I change stuff.
+   
+ - Right now you can:
+   - Click for sod.
+   - Buy shovels w/Gradually Increasing Price.
+   - Build a Mound that improves overall production.
+     This will eventually allow for Critters to be housed.
